@@ -1,0 +1,116 @@
+/* ====== Soft Dreamy Butterfly Gallery Custom Styles ====== */
+
+/* 3D Scene Structure (Exact custom CSS requested) */
+.scene, .a3d { display: grid }
+
+.scene {
+	overflow: hidden;
+	perspective: 45em; /* Enhanced depth perception */
+	mask:
+		linear-gradient(90deg,
+				#0000, red 15% 85%, #0000)
+}
+
+.a3d {
+	place-self: center;
+	transform-style: preserve-3d;
+	animation: ry 36s linear infinite;
+	transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.a3d.paused {
+	animation-play-state: paused;
+}
+
+@keyframes ry {
+	to { rotate: y 1turn }
+}
+
+.card {
+	--w: 16.5em; /* Slightly adjusted size for better screen ratios */
+	--ba: 1turn/var(--n);
+
+	grid-area: 1/ 1;
+	width: var(--w);
+	aspect-ratio: 7/ 10;
+	object-fit: cover;
+	border-radius: 1.5em;
+	backface-visibility: hidden;
+
+	transform:
+		rotatey(calc(var(--i)*var(--ba)))
+		translatez(calc(-1*(.5*var(--w) + 1.2em)/tan(.5*var(--ba))));
+	transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+	transform-style: preserve-3d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.a3d { animation-duration: 128s }
+}
+
+/* Wing Flap Animations (3D transforms for fluttering wings) */
+@keyframes flap-left {
+	0%, 100% {
+		transform: rotateY(0deg);
+	}
+	50% {
+		transform: rotateY(65deg);
+	}
+}
+
+@keyframes flap-right {
+	0%, 100% {
+		transform: rotateY(0deg);
+	}
+	50% {
+		transform: rotateY(-65deg);
+	}
+}
+
+.left-wing {
+	transform-origin: right center;
+	animation: flap-left 0.6s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+.right-wing {
+	transform-origin: left center;
+	animation: flap-right 0.6s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+/* Custom scrollbars for a minimal look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 243, 237, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(253, 186, 116, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(253, 186, 116, 0.5);
+}
+
+/* Base Body Styles */
+html, body {
+  display: grid;
+  height: 100%;
+  background: #fff3ed;
+  color: #4a3728;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Custom text shadow for glowing script font */
+.glow-text {
+  text-shadow: 0 0 8px rgba(253, 186, 116, 0.4), 0 0 20px rgba(253, 186, 116, 0.2);
+}
+
+.glow-text-gold {
+  text-shadow: 0 0 10px rgba(217, 119, 6, 0.3), 0 0 20px rgba(251, 191, 36, 0.2);
+}
