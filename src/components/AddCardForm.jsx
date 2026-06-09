@@ -12,7 +12,7 @@ export default function AddCardForm({ cards, cardsCount, onAddCard, onDeleteCard
   const [success, setSuccess] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
-  const isFull = cardsCount >= 11;
+  const isFull = cardsCount >= 12;
 
   // Curated list of gorgeous nature image presets
   const presets = [
@@ -68,7 +68,7 @@ export default function AddCardForm({ cards, cardsCount, onAddCard, onDeleteCard
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isFull) {
-      setErrorMsg('The gallery has reached its absolute capacity of 11 cards.');
+      setErrorMsg('The gallery has reached its absolute capacity of 12 cards.');
       return;
     }
     if (!title || !preview || !description || !image) {
@@ -150,7 +150,7 @@ export default function AddCardForm({ cards, cardsCount, onAddCard, onDeleteCard
                       The Circle is Complete
                     </h3>
                     <p className="font-sans text-xs text-amber-900/60 leading-relaxed font-light px-2">
-                      Your chrysalis gallery currently holds all <strong className="text-amber-800">11 magical shards</strong>. The cocoon is full. To manifest a new dreaming art piece, we must admire what exists.
+                      Your chrysalis gallery currently holds all <strong className="text-amber-800">12 magical shards</strong>. The cocoon is full. To manifest a new dreaming art piece, we must admire what exists.
                     </p>
                   </div>
                 ) : success ? (
@@ -377,7 +377,7 @@ export default function AddCardForm({ cards, cardsCount, onAddCard, onDeleteCard
               {/* Drawer footer details */}
               <div className="pt-6 border-t border-amber-900/10 text-center">
                 <p className="font-sans text-[10px] text-amber-900/40 uppercase tracking-[0.2em] font-light">
-                  Aurelia's Chrysalis Shards: {cardsCount} of 11
+                  Aurelia's Chrysalis Shards: {cardsCount} of 12
                 </p>
               </div>
             </motion.div>

@@ -44,7 +44,7 @@ export default function App() {
 
   // Appends a new card dynamically to local React state with safe unique incremental IDs
   const handleAddCard = (newCard) => {
-    if (cards.length >= 11) return;
+    if (cards.length >= 12) return;
     
     // Find a unique small integer ID to avoid duplicates but keep serial clean
     const existingIds = cards.map(c => c.id);
@@ -132,7 +132,7 @@ export default function App() {
             <div className="font-sans text-xs sm:text-sm text-amber-900/60 font-light mt-4 tracking-wider max-w-xl px-4 leading-relaxed flex flex-col gap-2">
               <p>Step into a rotating gallery of the sweetest memories and gifts that became a beautiful part of my life</p>
               <p>Every little thing here carries warmth, care, and a piece of your heart</p>
-              <p className="text-[10px] uppercase tracking-[0.25em] font-semibold text-amber-800/80 mt-1">The circle completes at exactly 11..</p>
+              <p className="text-[10px] uppercase tracking-[0.25em] font-semibold text-amber-800/80 mt-1">The circle completes at exactly 12..</p>
             </div>
           </header>
 
@@ -154,7 +154,7 @@ export default function App() {
             
             <div className="flex items-center gap-1.5">
               <span>Chrysalis Registry:</span>
-              <span className="font-bold text-amber-800">{cards.length} / 11 Shards</span>
+              <span className="font-bold text-amber-800">{cards.length} / 12 Shards</span>
             </div>
           </footer>
 

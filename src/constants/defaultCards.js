@@ -94,5 +94,54 @@ Even during the years we never met, I never forgot your kindness, your character
 The gifts you gave me were never just things, Maa… they were feelings filled with your love, effort, thoughts, and heart 🥹 After nine years of emptiness, your care reminded me that I mattered to someone again.Every little thing you gave became a treasure to me not because of its value, but because it came from you.You unknowingly filled the silence life left inside me and became a comfort I never thought I would receive again.No matter how much time passes, this room, this art, and this friendship will always remind me of one truth — some souls are sent back into our lives not just to stay for a season, but to become peace itself 🤍
 `,
     image: "/birthday_painting.jpg"
+  },
+  {
+    id: 12,
+    title: "Until My Last Breath 🫂",
+    preview: "Her Paa, always \u{1F90D}\u{2728}",
+    description: `The day I was born, my mother placed the first document of my life in my hands - my birth certificate.
+It carried my name, but more importantly, it carried her dreams, sacrifices, and endless love for me. \u{1F90D}
+
+As I grew older, I wanted to give something back to the woman who gave me everything.
+So when I earned my degree, it never felt like my achievement alone.
+It felt like a small certificate of appreciation for my mother - a thank you for every sleepless night, every prayer, and every silent sacrifice she made for me. \u{2728}
+
+Years later, life gave me another precious gift - a friendship that carried warmth, trust, and genuine care.
+Among all the names the world could have given me, she chose to call me "Paa."
+
+That simple title became more valuable than any award, degree, or recognition I have ever received. \u{1F319}
+
+Because a title gains value not from the word itself, but from the heart that gives it.
+
+Every day, I strive to become worthy of that name.
+I want my actions to be greater than the title she gave me, and my care to be greater than the expectations attached to it.
+
+She grew up carrying a space in her heart where a father's presence should have been.
+While no one can ever replace a father, I silently promised myself that she would never have to walk through life feeling alone.
+
+I will stand beside her in her victories and her struggles, in her smiles and her tears, in her confidence and her fears.
+
+When life becomes difficult, I will be her support.
+When she feels weak, I will remind her of her strength.
+When she feels unheard, I will listen.
+When she feels alone, I will stay.
+
+Not because I have to.
+But because true friendship chooses to stay even when it is not required. \u{1F90D}
+
+Some friendships are measured by time.
+Ours is measured by trust.
+
+Some friendships are remembered through photographs.
+Ours is remembered through the comfort we bring into each other's lives.
+
+And until my last breath, I will remain a silent shadow of support behind her - wishing for her happiness, protecting her peace, and being grateful for the friendship that life gave me.
+
+Because some bonds are not written by destiny alone...
+
+They are protected every day by love, trust, care, and friendship. \u{1F90D}
+
+- Paa \u{2728}`,
+    image: "/birthday_diary.jpg"
   }
 ];
